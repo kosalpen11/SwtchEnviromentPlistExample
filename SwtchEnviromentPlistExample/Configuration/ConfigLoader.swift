@@ -9,10 +9,15 @@ import Foundation
 
 class ConfigLoader {
     
-    static let ConfigName = Environment.default.rawValue
+    static let ConfigName = Environment.default.plistName
 
-    static func configure(named fileName: String = ConfigName) -> Configuration {
-        guard let filePath = Bundle.main.path(forResource: fileName, ofType: "plist"),
+    static func configure(
+        named fileName: String = ConfigName
+    ) -> Configuration {
+        guard 
+            let filePath = Bundle.main.path(
+                forResource: fileName, 
+                ofType: "plist"),
             let fileData = FileManager.default.contents(atPath: filePath)
         else {
             fatalError("Config file '\(fileName)' not loadable!")

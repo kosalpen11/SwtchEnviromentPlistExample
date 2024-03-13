@@ -14,7 +14,10 @@ fileprivate struct EnvironmentKey {
 private extension Bundle {
     var configuration: String {
         get {
-            if let key = Bundle.main.object(forInfoDictionaryKey: EnvironmentKey.key) as? String {
+            if let key = Bundle.main.object(
+                forInfoDictionaryKey: EnvironmentKey.key
+            ) as? String {
+                
                 return key
             }
             fatalError("No key configuration found.")
@@ -24,7 +27,20 @@ private extension Bundle {
 
 enum Environment: String {
     case development = "Debug"
+    case staging = "Staging"
+    case stagingRelease = "Staging Release"
     case production = "Release"
+    
+    var plistName: String {
+        switch self {
+        case .development:
+            return "Development"
+        case .staging, .stagingRelease:
+            return "Staging"
+        case .production:
+            return "Production"
+        }
+    }
 }
 
 extension Environment {

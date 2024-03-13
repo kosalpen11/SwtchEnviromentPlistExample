@@ -11,6 +11,11 @@
 		44859D6D2BA14F5200ECEA18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44859D6C2BA14F5200ECEA18 /* ContentView.swift */; };
 		44859D6F2BA14F5400ECEA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44859D6E2BA14F5400ECEA18 /* Assets.xcassets */; };
 		44859D722BA14F5400ECEA18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44859D712BA14F5400ECEA18 /* Preview Assets.xcassets */; };
+		44859D8A2BA1585400ECEA18 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44859D892BA1585400ECEA18 /* Configuration.swift */; };
+		44859D8D2BA15B2F00ECEA18 /* Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44859D7C2BA150D600ECEA18 /* Debug.plist */; };
+		44859D8E2BA15B3200ECEA18 /* Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44859D7E2BA150F700ECEA18 /* Release.plist */; };
+		44859D902BA15B4800ECEA18 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44859D8F2BA15B4800ECEA18 /* Environment.swift */; };
+		44859D922BA1606E00ECEA18 /* ConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44859D912BA1606E00ECEA18 /* ConfigLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		44859D6C2BA14F5200ECEA18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44859D6E2BA14F5400ECEA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44859D712BA14F5400ECEA18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44859D7C2BA150D600ECEA18 /* Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Debug.plist; sourceTree = "<group>"; };
+		44859D7E2BA150F700ECEA18 /* Release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Release.plist; sourceTree = "<group>"; };
+		44859D892BA1585400ECEA18 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		44859D8C2BA15AEE00ECEA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44859D8F2BA15B4800ECEA18 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		44859D912BA1606E00ECEA18 /* ConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,15 @@
 		44859D692BA14F5200ECEA18 /* SwtchEnviromentPlistExample */ = {
 			isa = PBXGroup;
 			children = (
-				44859D6A2BA14F5200ECEA18 /* SwtchEnviromentPlistExampleApp.swift */,
-				44859D6C2BA14F5200ECEA18 /* ContentView.swift */,
-				44859D6E2BA14F5400ECEA18 /* Assets.xcassets */,
+				44859D7A2BA14FCB00ECEA18 /* Assets */,
+				44859D882BA1580900ECEA18 /* Configuration */,
+				44859D822BA154EC00ECEA18 /* Helpers */,
+				44859D852BA1551500ECEA18 /* Models */,
+				44859D792BA14FC100ECEA18 /* Views */,
+				44859DAD2BA1689200ECEA18 /* ViewModels */,
+				44859DAE2BA168CA00ECEA18 /* Services */,
+				44859D802BA1544000ECEA18 /* Resources */,
+				44859D782BA14F7600ECEA18 /* Supporting Files */,
 				44859D702BA14F5400ECEA18 /* Preview Content */,
 			);
 			path = SwtchEnviromentPlistExample;
@@ -65,6 +82,118 @@
 				44859D712BA14F5400ECEA18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44859D782BA14F7600ECEA18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44859D8C2BA15AEE00ECEA18 /* Info.plist */,
+				44859D6E2BA14F5400ECEA18 /* Assets.xcassets */,
+				44859D6A2BA14F5200ECEA18 /* SwtchEnviromentPlistExampleApp.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44859D792BA14FC100ECEA18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44859D6C2BA14F5200ECEA18 /* ContentView.swift */,
+				44859D862BA1553300ECEA18 /* Components */,
+				44859D812BA1546800ECEA18 /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44859D7A2BA14FCB00ECEA18 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		44859D7B2BA150B800ECEA18 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				44859D7C2BA150D600ECEA18 /* Debug.plist */,
+				44859D7E2BA150F700ECEA18 /* Release.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		44859D802BA1544000ECEA18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44859D7B2BA150B800ECEA18 /* Environments */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44859D812BA1546800ECEA18 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		44859D822BA154EC00ECEA18 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44859D842BA1550400ECEA18 /* Utilities */,
+				44859D832BA154F500ECEA18 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44859D832BA154F500ECEA18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44859D842BA1550400ECEA18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		44859D852BA1551500ECEA18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44859D862BA1553300ECEA18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		44859D882BA1580900ECEA18 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				44859D892BA1585400ECEA18 /* Configuration.swift */,
+				44859D8F2BA15B4800ECEA18 /* Environment.swift */,
+				44859D912BA1606E00ECEA18 /* ConfigLoader.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		44859DAD2BA1689200ECEA18 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		44859DAE2BA168CA00ECEA18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44859D8E2BA15B3200ECEA18 /* Release.plist in Resources */,
 				44859D722BA14F5400ECEA18 /* Preview Assets.xcassets in Resources */,
+				44859D8D2BA15B2F00ECEA18 /* Debug.plist in Resources */,
 				44859D6F2BA14F5400ECEA18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44859D922BA1606E00ECEA18 /* ConfigLoader.swift in Sources */,
+				44859D8A2BA1585400ECEA18 /* Configuration.swift in Sources */,
+				44859D902BA15B4800ECEA18 /* Environment.swift in Sources */,
 				44859D6D2BA14F5200ECEA18 /* ContentView.swift in Sources */,
 				44859D6B2BA14F5200ECEA18 /* SwtchEnviromentPlistExampleApp.swift in Sources */,
 			);
@@ -269,16 +403,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwtchEnviromentPlistExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SwtchEnviromentPlistExample/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +423,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.swichplist.SwtchEnviromentPlistExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,16 +435,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwtchEnviromentPlistExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SwtchEnviromentPlistExample/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.swichplist.SwtchEnviromentPlistExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

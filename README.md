@@ -1,0 +1,2 @@
+# SwtchEnviromentPlistExample
+Separate Environment Plist
